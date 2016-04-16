@@ -10,7 +10,7 @@ spec = Gem::Specification.new do |s|
   s.homepage = 'https://github.com/Eric-Guo/rmmseg-cpp-new'
   s.license = 'MIT'
 
-  s.files = Dir['lib/**/*.rb', 'bin/*', 'ext/**/*.h', 'ext/**/*.cpp', 'data/*.dic']
+  s.files = Dir['{bin,lib}/**/*', 'ext/**/*.h', 'ext/**/*.cpp', 'data/*.dic']
   s.platform = Gem::Platform::RUBY
   s.extensions = FileList['ext/rmmseg-cpp/extconf.rb']
   s.require_path = 'lib'
