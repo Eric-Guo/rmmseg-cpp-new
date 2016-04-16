@@ -4,15 +4,16 @@ spec = Gem::Specification.new do |s|
   s.name = "rmmseg-cpp-new"
   s.version = '0.2.9'
 
-  s.authors = ["pluskid,seoaqua,ChienliMa"]
-  s.email = ["pluskid@gmail.com,seoaqua@qq.com,maqianlie@gmail.com"]
+  s.authors = ['pluskid', 'seoaqua', 'ChienliMa', 'Eric Guo']
+  s.email = ['pluskid@gmail.com;seoaqua@qq.com;maqianlie@gmail.com;eric.guocz@gmail.com']
   s.summary = %q{rmmseg-cpp new bore}
   s.homepage = 'https://github.com/Eric-Guo/rmmseg-cpp-new'
   s.license = 'MIT'
 
-  s.files = Dir['lib/**/*.rb'] + Dir['lib/*.rb'] + Dir['bin/*'] + Dir['ext/**/*.c'] + Dir['lib/**/*.h']
+  s.files = Dir['lib/**/*.rb', 'bin/*', 'ext/**/*.h', 'ext/**/*.cpp', 'data/*.dic']
   s.platform = Gem::Platform::RUBY
-  s.extensions = FileList['ext/**/extconf.rb']
+  s.extensions = FileList['ext/rmmseg-cpp/extconf.rb']
+  s.require_path = 'lib'
 end
 
 # add your default gem packing task
