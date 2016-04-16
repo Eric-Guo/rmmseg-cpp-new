@@ -1,3 +1,4 @@
 tmp/*
 pkg/*
 lib/rmmseg/rmmseg-cpp.so
+*.o
