@@ -17,10 +17,10 @@ namespace rmmseg
 
             Token tk(NULL, 0);
             int len = next_char();
-            // if (len == 1)
-            //     tk = get_basic_latin_word();
-            // else
-            tk = get_cjk_word(len);
+            if (len == 1)
+                tk = get_basic_latin_word();
+            else
+                tk = get_cjk_word(len);
             if (tk.length > 0)
                 return tk;
         }
@@ -220,7 +220,7 @@ namespace rmmseg
             if (n >= max_word_length())
                 break;
             len = next_char();
-            if (len < 1)
+            if (len <= 1)
                 break;
 
             m_pos += len;
