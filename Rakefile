@@ -22,7 +22,7 @@ end
 
 # feed the ExtensionTask with your spec
 Rake::ExtensionTask.new('rmmseg-cpp', spec) do |ext|
-  ext.name = 'rmmseg-cpp'        # indicate the name of the extension.
-  ext.ext_dir = 'ext/rmmseg-cpp' # search for 'hello_world' inside it.
-  ext.lib_dir = 'lib/rmmseg'     # put binaries into this folder.
+  ext.name = 'rmmseg'        # indicate the name of the extension.
+  ext.ext_dir = 'ext/rmmseg' # search for 'hello_world' inside it.
+  ext.lib_dir = 'lib/rmmseg' # put binaries into this folder.
 end
