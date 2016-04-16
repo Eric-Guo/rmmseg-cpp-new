@@ -6,11 +6,11 @@ spec = Gem::Specification.new do |s|
 
   s.authors = ['pluskid', 'seoaqua', 'ChienliMa', 'Eric Guo']
   s.email = ['pluskid@gmail.com;seoaqua@qq.com;maqianlie@gmail.com;eric.guocz@gmail.com']
-  s.summary = %q{rmmseg-cpp new bore}
+  s.summary = %q{rmmseg-cpp new born to support windows as well}
   s.homepage = 'https://github.com/Eric-Guo/rmmseg-cpp-new'
   s.license = 'MIT'
 
-  s.files = Dir['{bin,lib}/**/*', 'ext/**/*.h', 'ext/**/*.cpp', 'data/*.dic']
+  s.files = Dir['{bin,lib}/**/*', 'ext/**/*.h', 'ext/**/*.cpp', 'data/*.dic', 'README.md', 'LICENSE']
   s.platform = Gem::Platform::RUBY
   s.extensions = FileList['ext/rmmseg/extconf.rb']
   s.require_path = 'lib'
