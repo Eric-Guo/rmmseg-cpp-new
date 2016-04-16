@@ -1,4 +1,3 @@
 tmp/*
-lib/rmmseg-cpp-new.so
 pkg/*
-lib/rmmseg-cpp.so
+lib/rmmseg/rmmseg-cpp.so
