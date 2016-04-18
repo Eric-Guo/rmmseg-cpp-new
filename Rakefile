@@ -2,7 +2,7 @@ require 'rake/extensiontask'
 
 spec = Gem::Specification.new do |s|
   s.name = "rmmseg-cpp-new"
-  s.version = '0.3.0'
+  s.version = '0.3.1'
 
   s.authors = ['pluskid', 'seoaqua', 'ChienliMa', 'Eric Guo']
   s.email = ['pluskid@gmail.com;seoaqua@qq.com;maqianlie@gmail.com;eric.guocz@gmail.com']
